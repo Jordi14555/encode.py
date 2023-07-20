@@ -7,18 +7,14 @@ def encoded_password(password):
         encoded_password += new_digit
     return encoded_password
 
-#def password_encode(password):
-    #encoded_pass = ""
-    #for digit in password:
-        #num = int(digit)
-    #new_digit = (num + 3)
-    #if new_digit > 10:
-     #       new_digit = (new_digit - 10)
-    #encoded_pass += str(new_digit)
 
-    #return encoded_pass
+def decode_pass(password):
+    decoded_password = ""
+    for digit in password:
+        decoded_digit = str((int(digit) - 3) % 10)
+        decoded_password += decoded_digit
+    return decoded_password
 
-#print(encoded_pass)
 
 while True:
     print('Menu \n1. Encode\n2. Decode\n3. Quit')

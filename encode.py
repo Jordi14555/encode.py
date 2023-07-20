@@ -1,4 +1,3 @@
-#Jordania Jones
 #encoding password function, adding 3 to each digit in password and printing out new one
 def encoded_password(password):
     encoded_password = ""
